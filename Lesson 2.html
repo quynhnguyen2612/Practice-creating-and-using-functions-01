@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button onclick="check()">result</button>
+    <p id="result"></p>
+    <script>
+        //Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+        // Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
+        function increaseNumber(num) {
+            return num + 1;
+            }
+        function check() {
+            let inputNumber = +document.getElementById('num').value;
+            let result = increaseNumber(inputNumber);
+            document.getElementById("result").innerHTML = "Kết quả: " + result;
+
+        }
+
+    </script>
+</body>
+</html>
